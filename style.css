@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color: #eee;
+}
+/* nav style start */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-color: #fff;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+nav ul li{
+    list-style: none;
+    float: left;
+ position: relative;
+}
+nav ul li a{
+    display: block                      ;
+}
+nav ul li ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #eee;
+    min-width: 200px;
+}
+nav ul li ul li{
+    width: 100%;
+    border-top: 1px solid #333;
+}
+nav ul li:focus-within>ul,
+nav ul li:hover>ul{
+    display: inline;
+}
+nav ul li ul li ul{
+    top: 0;
+    left: 100%;
+}
+nav ul li a{
+    padding: 20px;
+    color: #333;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    background-color: #333;
+    color: #fff;
+}
+/* nav style end */
+
+/* banner style start */
+.bannerContainer{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    height: 500px;
+    background-image: linear-gradient(to right, rgb(65, 28, 28) , blueviolet);
+    margin-bottom: 100px;
+}
+.banner h1{
+font-size: 60px;
+}
+.banner p{
+   margin-top: 20px;
+   margin-bottom: 40px;
+}
+.banner .bannerBtn{
+    background-color: rgb(11, 11, 255);
+    padding: 15px 30px;
+    color: #fff;
+    border-radius: 5px;
+}
+/* banner style end */
+
+/* About Style start */
+
+.aboutMainContainer{
+    padding: 0 7%;
+    margin-bottom: 100px;
+}
+.aboutContainer{
+    /* padding: 0 7%; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.aboutDescription{
+    margin-left: 40px;
+}
+.aboutDescription h3{
+    font-size: 44px;
+}
+.aboutDescription p{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.aboutDescription .aboutBtn{
+    background-color: #333;
+    color: #eee;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+/* About Style end */
+
+/* services style start */
+.servicesContainer{
+    padding: 0 7%;
+    margin-bottom: 100px;
+}
+.servicesContainer h3{
+    font-size: 44px;
+    margin-bottom: 30px;
+}
+.cardContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.card{
+    
+    padding: 20px;
+    height: 380px;
+    width: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card .cardImg{
+    width: 340px;
+    
+}
+.card h4{
+    font-size: 32px;
+    margin: 20px 0;
+}
+/* services style end */
+
+/* Footer section start */
+footer{
+    height: 200px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.footerP{
+    margin-bottom: 20px;
+}
+/* Footer section end */
